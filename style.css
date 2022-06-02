@@ -1,0 +1,106 @@
+# {
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #6a5acd;
+    --black: #212226;
+    --red: #8E0404;
+    --green: #adff29;
+    --aqua: #00ffff;
+    --silver: #c0c0c0;
+    --antiquewhite: #faebd7;
+    --skyblue: #87ceeb;
+    --gold: #ffd700;
+
+
+    --menu-height: 75px;
+}
+
+
+
+html, body {
+    margin: 0;
+    background: var(--skyblue);
+}
+
+body, button, input, select, textarea {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+    color: var(--black);
+}
+
+button {
+    background: var(--gold);
+    border: 0;
+    padding: 8px 35px;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+header {
+    height: calc(100vh - var(--menu-height));
+    display: flex;
+    align-items: center; 
+}
+
+header .container {
+    width: 50%;
+    height: fit-content;
+    padding: 0 100px;
+}
+
+header .container h1 {
+    color: var(--green);
+}
+
+header .container button {
+    margin-top: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--menu-height);
+    background: var(--skyblue);
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+}
+
+nav img {
+    height: 45px;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul a {
+    font-size: 25px;
+    color: var(--black);
+    text-decoration: none;
+    margin: 0 35px;
+}
+
+nav ul a svg {
+    display: none;
+
+}
